@@ -1,0 +1,91 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+}
+.container img{
+  height: 200px;
+}
+.card{
+  cursor: pointer;
+  width: 18rem;
+}
+@media screen and (max-width:992px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    
+  }
+  .card{
+    width: 20rem;
+  }
+}
+@media screen and (max-width:781px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,290px);
+    
+  }
+  .card{
+    width: 16rem;
+
+  }
+}
+@media screen and (max-width:689px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+    
+  }
+  .card{
+    width: 15rem;
+
+  }
+}
+@media screen and (max-width:519px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,230px);
+    
+  }
+  .card{
+    width: 13rem;
+
+  }
+}
+@media screen and (max-width:464px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,220px);
+    
+  }
+  .card{
+    width: 11rem;
+
+  }
+}
+@media screen and (max-width:417px) {
+  .container{
+    display: table-row;
+    grid-template-columns: repeat(2);
+    
+  }
+  .card{
+    width: 100%;
+
+  }
+}
+.card-body h5{
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  text-transform: capitalize;
+}
+.card-body h5:hover{
+  color:rgb(25, 25, 223)
+}
+.card-body p{
+  font-weight: 100;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,23 @@
+.click{
+color: #f9f9fc;
+background-color:   rgb(57, 57, 205);
+border-radius: 7px;
+border: 1px solid rgb(251, 249, 249);
+padding: 10px;
+width: 18%;
+
+
+}
+.click:hover{
+    margin: 1px;
+}
+.input{
+   
+    padding: 12px;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid rgb(214, 208, 208);
+    border-radius: 7px;
+    width: 90%;
+
+}

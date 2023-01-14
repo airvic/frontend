@@ -1,0 +1,32 @@
+
+  <div class="container">
+      <h1>Login </h1>
+      <form>
+        <!-- <div class="form-group">
+          <label for="exampleInputname1">Firstname</label>
+          <input type="username" name="firstname" class="form-control" [(ngModel)] = "Firstname"  id="Firstname" aria-describedby="mamealHelp" placeholder="Enter firstname">
+          <small id="nameHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputname1">Secondname</label>
+            <input type="username" name="secondname" class="form-control"  [(ngModel)] = "Secondname" id="exampleInputname2" aria-describedby="mamealHelp" placeholder="Enter secondname">
+            <small id="nameHelp" class="form-text text-muted"></small>
+          </div> -->
+          <div class="form-group">
+            <label for="exampleInputname1">username</label>
+            <input type="username" name="username" class="form-control"  [(ngModel)] = "Username" id="exampleInputname1" aria-describedby="mamealHelp" placeholder="Enter username">
+            <small id="nameHelp" class="form-text text-muted"></small>
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="password" class="form-control" id="exampleInputPassword1"  [(ngModel)] = "Password" placeholder="Password">
+        </div>
+      
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">keep me login</label>
+        </div>
+        <button (click)="login($event)" class="btn btn-primary">Submit</button>
+      </form>
+    
+  </div>

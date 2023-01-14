@@ -1,0 +1,6 @@
+node_modules
+config
+bootstrap-5.2.1-dist
+.firebase 
+angular-webpack/
+loader

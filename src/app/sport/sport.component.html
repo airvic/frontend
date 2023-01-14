@@ -1,0 +1,29 @@
+
+<div class="sidecol" *ngFor="let n of Side">
+  <div>
+    <a [routerLink]="['explore/'+n.title+'/'+n._id]"> 
+      <div class="sidecolimage">
+        
+        <img class="image thumb" src="{{n.image1}}"> 
+      </div>
+    <div class="sidecoltext">  
+      <h3>{{n.title}}
+      </h3>
+  
+      
+    </div>
+  </a>
+
+  </div>
+   
+  </div>
+  
+
+
+  
+  
+
+
+<div class="container newsletter">
+    <app-newsletter></app-newsletter>
+</div>

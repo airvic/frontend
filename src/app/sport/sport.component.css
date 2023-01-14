@@ -1,0 +1,284 @@
+.carousel-caption{
+    width: 50%;
+}
+.title{
+    font-size: larger;
+    font-weight: 800;
+    font-style: italic;
+}
+ngb-carousel {
+    width: 100%;
+}
+.container{
+    text-align: center;
+}
+
+@media screen and (max-width:993px){
+    .newsletter{
+        display: none;
+    }
+    .center{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 770px) {
+    
+    .carousel-caption{
+        width: 70%;
+    }
+    .newsletter{
+        display:none;
+    }
+    .title{
+        font-size: small;
+        font-weight: 400;
+        font-style: italic;
+    }
+    ngb-carousel {
+        width: 80%;
+    }
+    .container{
+        text-align: center;
+    }
+   }
+   
+@media screen and (max-width: 440px) {
+    .carousel-caption{
+        width: 70%;
+    }
+
+    .title{
+        font-size: smaller;
+        font-weight: 500;
+        font-style: italic;
+    }
+    ngb-carousel {
+        width: 100%;
+    }
+    .container{
+        text-align: center;
+    }
+   }
+   
+   .center{
+       text-align: center;
+    
+   }
+
+   .side{
+       height:120px;
+       overflow:hidden;
+       cursor: pointer;
+   }
+   .side:hover{
+       opacity: 70%;
+   }
+    
+    .image{
+    display: block;
+    margin-bottom: 0;
+    padding-right: 0;
+    width:100px;
+    padding-bottom:4px;
+    margin-bottom:7px;
+float: center; 
+   }
+   .title{
+    font-size: 12px;
+    margin-top: 0px;
+    float: left;
+    position: relative;
+
+   }
+
+   .sidecol{
+    display: inline-flex;
+    cursor: pointer;
+    margin: 5px;
+    padding:0.1px
+    
+  }
+  .sidecol:hover{
+ opacity:95%;
+ padding:0.1px
+  }
+  .sidecolimage{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .sidecolimage img{
+    width: 80px !important;
+    height: 80px;
+    margin: 5px;
+    padding-right: 0px;
+  }
+  .sidecoltext{
+  
+    margin: 0px;
+    align-items: normal;
+
+  }
+  .sidecoltext h3{
+    font-weight: 500;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    display: initial;
+    margin: 0px;
+  }
+
+  .sidecoltext h3 strong{
+      font-size: small;
+      display: none;
+  }
+
+.grid{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.sec{
+    display: block;
+}
+.card1{
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+}
+.iconDetails {
+    margin-left:2%;
+   float:left; 
+   height:40px;
+   width:40px; 
+   } 
+   
+   .container2 {
+       width:100%;
+       height:auto;
+       padding:1%;
+   }
+   .image{
+       width:130%; 
+       height:100px;
+       padding:0px
+   }
+   h4{
+       margin: 0px;
+       padding: 0px;
+   }
+                         @media screen and (max-width: 1204px) {
+    .image{
+        display: block;
+        margin-bottom: 0;
+        padding-right: 0;
+        width:75px;
+        padding-bottom:2px;
+        margin-bottom:5px;
+    float: center; 
+       }
+    
+       .sidecol{
+        display: inline-flex;
+        cursor: pointer;
+        margin: 3px;
+        
+      }
+      .sidecol:hover{
+     opacity:95%;
+     padding:0.1px
+      }
+      .sidecolimage{
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+      }
+      .sidecolimage img{
+        width: 90px;
+        height: 90px;
+        margin: 3px;
+        padding-right: 0px;
+      }
+      .sidecoltext{
+      
+        margin: 0px;
+        padding: 0px;
+        align-items: normal;
+    
+      }
+      .sidecoltext h3{
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: larger;
+        display: initial;
+        margin: 0px;
+      }
+    
+      .sidecoltext h3 strong{
+          font-size: small;
+          display: none;
+      }
+    
+   }
+                                              @media screen and (max-width: 995px) {
+                                                .image{
+                                                    display: block;
+                                                    margin-bottom: 0;
+                                                    padding-right: 0;
+                                                    width:100px;
+                                                    padding-bottom:2px;
+                                                    margin-bottom:5px;
+                                                float: center; 
+                                                   }
+                                                
+                                                   .sidecol{
+                                                    display: none;
+                                                    cursor: pointer;
+                                                    margin: 3px;
+                                                    
+                                                  }
+                                                  .sidecol:hover{
+                                                 opacity:95%;
+                                                 padding:0.1px
+                                                  }
+                                                  .sidecolimage{
+                                                    display: inline-block;
+                                                    margin: 0px;
+                                                    padding: 0px;
+                                                  }
+                                                  .sidecolimage img{
+                                                    width: 100px;
+                                                    height: 90%;
+                                                    margin: 3px;
+                                                    padding-right: 0px;
+                                                  }
+                                                  .sidecoltext{
+                                                  
+                                                    margin: 0px;
+                                                    padding: 0px;
+                                                    align-items: normal;
+                                                
+                                                  }
+                                                  .sidecoltext h3{
+                                                    font-style: oblique;
+                                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                                    font-size: larger;
+                                                    display: initial;
+                                                    margin: 0px;
+                                                  }
+                                                
+                                                  .sidecoltext h3 strong{
+                                                      font-size: small;
+                                                      display: none;
+                                                  }
+   }
+   @media screen and (max-width: 1196px) {
+.sidecol{
+    display: none;
+}
+.container{
+    display: none;
+}
+   }

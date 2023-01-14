@@ -1,0 +1,18 @@
+<h2 class="header">Top posts</h2>
+
+<div class="container" >
+  
+      <div class="card" *ngFor="let f of post" >
+        <a [routerLink]="['explore/'+f.title+'/'+f._id]">
+        <img src="{{f.image1}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-text">
+            {{f.title}}
+          </h3>
+          <p class="card-text">{{f.description}}...</p>
+        </div>
+      </a>
+    </div>
+
+</div>
+

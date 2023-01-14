@@ -1,0 +1,39 @@
+
+<section>
+  <!-- celebrity section -->
+<h2 class="header">for you</h2>
+<!-- <div class="grid">
+     <div class="col" *ngFor="let c of celeb">
+      <a [routerLink]="['explore/'+c.title+'/'+c._id]">
+     <img class="image" src="{{c.image}}">
+   <h3 class="header">{{c.title}}</h3>
+   <p class="des">{{c.description}}..</p>
+  </a>
+    </div>
+ </div>  -->
+<hr class="line">
+
+<div class="container">
+  <!-- <h3 class="header">Sporsored product</h3> -->
+  <app-affilate></app-affilate>
+</div>
+
+
+</section>
+<section>
+  <div class="container card-group" >
+    <div class="card" *ngFor="let c of celeb">
+      <a [routerLink]="['explore/'+c.title+'/'+c._id]">
+      <img src="{{c.image1}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{c.title}}</h5>
+        <p class="card-text">{{c.description}}..</p>
+      </div>
+      </a>
+      <div class="card-footer">
+        <small class="text-muted">Last updated {{time}} mins ago</small>
+      </div>
+    </div>
+    
+  </div>
+</section>

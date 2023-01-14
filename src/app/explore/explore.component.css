@@ -1,0 +1,195 @@
+.title{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70%;
+    text-align: center;
+}
+.description{
+    font-style: oblique;
+    text-align: center;
+    padding: 3px;
+
+}
+.image{
+    width: 80%;
+    
+}
+.toolbar {
+    align-items: center;
+    background-color: #7419db;
+    color: white;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .spacer {
+    flex: 1 ;
+  }
+  .link a{
+      text-decoration: none;
+  }
+  .link a button{
+      color: white;
+  }
+  .menu{
+    color: rgb(27, 26, 26);
+    font-size:x-large;
+    cursor: pointer;
+  }
+  .menu :hover{
+    margin: 10px;
+
+  }
+.socials{
+  text-align: center;
+
+}
+.socials img{
+  padding: 20px;
+}
+  @media screen and (min-width: 770px) {
+
+    .menu{
+     display: none;
+    }
+    .logo{
+      width: 2%;
+    }
+
+  }
+  @media screen and (max-width: 770px) {
+   .link{
+     display: none;
+   }
+   .logo{
+     width: 10%;
+   }
+  
+  }
+  .sec{
+    font-size: 14px;
+    padding-bottom: 13px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+  }
+  .ul li{
+    font-size: 12px;
+    padding-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor:pointer;
+    display: block;
+    color: rgb(20, 20, 20);
+    
+  }
+  .x{
+    padding: auto;
+    cursor: pointer;
+  }
+  .matcontainer mat-sidenav{
+    width: 70%;
+  
+   
+
+  }
+  .logo{
+    width: 5%;
+  }
+  ngb-carousel{
+    width: 100%;
+  }
+
+  mat-sidenav-content{
+    background-color: #fff;
+  }
+
+  .col22{
+    width:80%;
+    -ms-flex-item-align: center;
+  }
+  .col33{
+    width:20%;
+    -ms-flex-item-align: left;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .col11{
+      width: 20%;
+      -ms-flex-item-align: right;
+    }
+    .col22{
+      width:70%;
+      -ms-flex-item-align: center;
+    }
+    .col33{
+      width:30%;
+      -ms-flex-item-align: left;
+    }
+   
+
+   }
+
+   @media screen and (max-width: 1000px) {
+    
+    .col22{
+      width:75%;
+      -ms-flex-item-align: center;
+    }
+    .col33{
+      width:25%;
+      -ms-flex-item-align: left;
+    }
+   
+   }
+   @media screen and (max-width: 768px) {
+ 
+    .col22{
+      width:70%;
+      -ms-flex-item-align: center;
+    }
+    .col33{
+      width:30%;
+      -ms-flex-item-align: left;
+    }
+   
+   }
+   @media screen and (max-width: 576px) {
+  
+    .col22{
+      width:100%;
+      -ms-flex-item-align: center;
+    }
+   
+   
+   }
+   .articletitle{
+     font-size:x-large;
+     font-weight: 900;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     padding-bottom: 5px;
+     margin: 5px;
+     text-transform: uppercase;
+     text-align: center;
+
+    }
+    .articledescription{
+      text-align: center;
+    font-style: bold;
+      font-weight: 500;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    .content{
+      font-family: sans-serif;
+      padding: 3px;
+    }
+    .image{
+      width: 100%;
+     
+    }

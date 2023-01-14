@@ -1,0 +1,29 @@
+<!-- firebase section -->
+
+<app-gridnews></app-gridnews>
+<app-database></app-database>
+<div class="container card container-card">
+<div>
+  <h3 class="aboutheader">About us</h3>
+  <h4 class="headerlabel">At brivima we care about your curiosity...</h4>
+</div>
+</div>
+<!-- politics -->
+<!-- <a href="/{{m.title}}/{{m._id}}" (click)="getmore(m.title,m._id)"> -->
+
+<!-- </a> -->
+<div class="container">
+  <section  class="grid">
+   
+      <div class="col card" style="width: 15rem;" *ngFor="let m of Sport">
+        <img class="card-img-top" src="{{m.image1}}">
+        <div class="card-body">
+          <a [routerLink]="['explore/'+m.title+'/'+m._id]">
+          <h4 class="header">{{m.title}}</h4>
+        </a>
+          <p class="card-text">{{m.description}}</p>
+        </div>
+      </div>
+    
+   </section>
+</div>

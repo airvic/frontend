@@ -1,0 +1,9 @@
+.pack filter=lfs diff=lfs merge=lfs -text
+*.pack filter=lfs diff=lfs merge=lfs -text
+package-lock.json filter=lfs diff=lfs merge=lfs -text
+98e144013b99b4d80271c4df7afa5c356828d01c4cd68a2a3b4873373784c2cb filter=lfs diff=lfs merge=lfs -text
+.angular/cache/15.0.4/angular-webpack/36b294b3c95fa44b2e78039d5b6ba756562317b9/2.pack filter=lfs diff=lfs merge=lfs -text
+[[:space:]].angular/cache/15.0.4/angular-webpack/c04b50b24e0a2e30b000e6c491eec34da36020e7/1.pack filter=lfs diff=lfs merge=lfs -text
+bb5abbb68dfc72197ed65f907926e841078f32348ded95c646cadc38743e9f22 filter=lfs diff=lfs merge=lfs -text
+.angular filter=lfs diff=lfs merge=lfs -text
+.angular/cache/15.0.4/angular-webpack/c04b50b24e0a2e30b000e6c491eec34da36020e7/1.pack filter=lfs diff=lfs merge=lfs -text

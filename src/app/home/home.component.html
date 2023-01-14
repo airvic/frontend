@@ -1,0 +1,139 @@
+
+<mat-sidenav-container class="matcontainer">
+    <mat-sidenav [(opened)]="opened">
+        <mat-toolbar class="toolbar">
+          <img src="assets\93daefed47d549a2b2ee4c615eb53462.png" alt="" width="11%"> <h3 class="title">{{title}}</h3>
+         
+            <div class="spacer"></div>
+            
+            <!-- <div class="social">
+                <img src="assets/svg/facebook-svgrepo-com.svg" width="5%" alt="facebook">
+               <img src="assets/svg/instagram-svgrepo-com.svg" width="5%" alt="facebook">
+                <img src="assets/svg/twitter-svgrepo-com.svg" width="5%" alt="facebook">
+             </div> -->
+         <div class="link">
+          
+         </div>
+         <mat-icon (click)="sidenav($event)" class="x"><span class="material-icons-outlined">
+            close
+            </span></mat-icon>
+        
+          </mat-toolbar>
+          <div>
+            
+<div class="footer">
+    <div class="container">
+        <div class="row">
+          
+          <!-- <div class="col-sm">
+           
+            <ul class="ul">
+         
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Coronavirus</li></a>
+                <a href=""><li>Tending posts</li></a>
+                <a href=""><li>Travel</li></a>
+               <a href=""> <li>Politics</li></a>
+              <a href=""><li>Technology</li></a> 
+               <a href=""><li>Sport</li></a> 
+               <a href=""> <li>Health</li></a>
+               <a href=""><li>Money</li></a> 
+            </ul>
+          </div> -->
+          <div class="col-sm">
+            <ul class="ul">
+                <h5 class="sec">ABOUT</h5>
+                <a routerLinik=""><li>contact</li></a>
+                <a routerLink="contactus"><li>feedback</li></a>
+                <a routerLink="privacypolicy"><li>privacy policy</li></a>
+                <a routerLink="privacypolicy"><li>Terms of service</li></a>
+               <a routerLink="pagenotfound"> <li>share tips with brivima.com</li></a>
+              <a routerLink="pagenotfound"><li>make money with brivima</li></a> 
+            </ul>
+          </div>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+      <label class="copy">copyright &copy; brivima.com. All right reserved</label>
+     
+</div>
+             
+          </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+
+        <mat-toolbar class="toolbar"> <img src="assets\93daefed47d549a2b2ee4c615eb53462.png" class="logo" > <h3 class="title">{{title}}</h3>
+            <div class="spacer"></div>
+            
+            <!-- <div class="social">
+                <img src="assets/svg/facebook-svgrepo-com.svg" width="5%" alt="facebook">
+               <img src="assets/svg/instagram-svgrepo-com.svg" width="5%" alt="facebook">
+                <img src="assets/svg/twitter-svgrepo-com.svg" width="5%" alt="facebook">
+             </div> -->
+         <div class="link">
+             <a href=""><button mat-button>Home</button></a>
+             <a routerLink = "contactus"><button mat-button >Contact us</button></a>
+             <a routerLink="privacypolicy"><button mat-button>privacypolicy</button></a>
+             <!-- <a href=""><button mat-button>Trending</button></a> -->
+             
+            
+         </div>
+          <mat-icon class="menu" (click)="sidenav($event)">menu</mat-icon>
+        
+          </mat-toolbar>
+<div class="container">
+  <!-- ads desplay here -->
+  <hr>
+      <div class="row">
+       
+        <div class="col22">
+          <app-trending></app-trending>
+          
+        </div>
+        <div class="col33">
+          
+        <app-sport></app-sport>
+        
+        
+        </div>
+      </div>
+</div>
+
+        
+
+<!-- <app-contactus></app-contactus> -->
+<app-newsletter></app-newsletter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <app-footer></app-footer>
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+  
+

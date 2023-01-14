@@ -1,0 +1,196 @@
+<mat-toolbar class="toolbar">
+    <h3>Welcome Airvic</h3>
+<div class="spacer"></div>
+<button  (click)="loggout($event)" class="btn btn-primary ">Loggout</button>
+
+</mat-toolbar>
+<br>
+<div class="container">
+  <mat-tab-group>
+    <mat-tab label="Create articles">
+      <br>
+      <div class="container card">
+        <h2 class="postheader">Create post</h2>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputtitle1">title</label>
+              <input type="text" name="title" class="form-control" [(ngModel)] = "title"  id="title" aria-describedby="mamealHelp" placeholder="enter title">
+              <small id="nameHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">author</label>
+                <input type="text" name="author" class="form-control"  [(ngModel)] = "author" id="exampleInputname2"  placeholder="Enter author">
+                <small id="authorHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="image">image1 url</label>
+                <input type="text" name="image1" class="form-control"  [(ngModel)] = "image1" id="exampleInputname2"  placeholder="copy image1 url">
+                <small id="authorHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="image">image2 url</label>
+                <input type="text" name="image2" class="form-control"  [(ngModel)] = "image2" id="exampleInputname2"  placeholder="copy image2 url">
+                <small id="authorHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="email">image3 url</label>
+                <input type="text" name="image3" class="form-control"  [(ngModel)] = "image3" id="exampleInputname2"  placeholder="copy image3 url">
+                <small id="authorHelp" class="form-text text-muted"></small>
+              </div>
+           
+            <div class="form-group">
+              <label for="textarea">enter description</label>
+              <textarea type="textarea" name="description" class="form-control" id="description"  [(ngModel)] = "description" placeholder="enter description "></textarea>
+            </div>
+            <div class="form-group">
+              <label for="textarea">enter content</label>
+              <textarea type="textarea" name="content" class="form-control" id="content"  [(ngModel)] = "content" placeholder="enter main content "></textarea>
+            </div>
+            <div class="form-group">
+              <label for="textarea">enter content2</label>
+              <textarea type="textarea" name="content2" class="form-control" id="content2"  [(ngModel)] = "content2" placeholder="enter secound content "></textarea>
+            </div>
+            <div class="form-group">
+              <label for="textarea">enter content3</label>
+              <textarea type="textarea" name="content3" class="form-control" id="content3"  [(ngModel)] = "content3" placeholder="enter third content "></textarea>
+            </div>
+            <div class="form-group">
+              <label for="email">enter category</label>
+              <input type="text" name="category" class="form-control"  [(ngModel)] = "category" id="exampleInputname2"  placeholder="Enter category eg sport,celebrity,fashion,politics">
+              <small id="authorHelp" class="form-text text-muted"></small>
+            </div>
+          
+            <!-- <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">keep me secret</label>
+              <label for="">brivima team will get back to you in 24 hours</label>
+            </div> -->
+            <span>
+              <button (click)="Postarticle($event)" class="btn btn-primary submitbtn">Post article</button>
+              <button (click)="Postcelebrity($event)" class="btn btn-primary submitbtn">Post celebrity</button>
+              <button (click)="Postsport($event)" class="btn btn-primary submitbtn">Post sport</button>
+              <button (click)="Postfashion($event)" class="btn btn-primary submitbtn">Post fashion</button>
+              <button (click)="Postpolitics($event)" class="btn btn-primary submitbtn">Post politics</button>
+              <button (click)="Postonfirebase($event)" class="btn btn-primary submitbtn">Post on firebase</button>
+            </span>
+
+          </form>
+    </div>
+    <br>
+    <br>
+    </mat-tab>
+    <mat-tab label="view articles">
+      <br>
+      <div class="container">
+        <h2>{{Adminpost.length}} Recent posts</h2>
+          <!-- fetch database articles -->
+         <div  *ngFor="let a of Adminpost" class="card">
+          <span> <h4>{{a.title}} createdby - {{a.author}}</h4> 
+             <button mat-button  (click)="delete(a.title)" class="btn btn-warning">delete</button></span>
+             <hr>
+         </div>
+         <div  *ngFor="let s of Sport" class="card">
+          <span> <h4>{{s.title}} createdby - {{s.author}}</h4> 
+             <button mat-button  (click)="delete(s.title)" class="btn btn-warning">delete</button></span>
+             <hr>
+         </div>
+         <div  *ngFor="let p of Politics" class="card">
+          <span> <h4>{{p.title}} createdby - {{p.author}}</h4> 
+             <button mat-button  (click)="delete(p.title)" class="btn btn-warning">delete</button></span>
+             <hr>
+         </div>
+         <div  *ngFor="let f of Fashion" class="card">
+          <span> <h4>{{f.title}} createdby - {{f.author}}</h4> 
+             <button mat-button  (click)="delete(f.title)" class="btn btn-warning">delete</button></span>
+             <hr>
+         </div>
+         <div  *ngFor="let c of Celebrity" class="card">
+          <span> <h4>{{c.title}} createdby - {{c.author}}</h4> 
+             <button mat-button  (click)="delete(c.title)" class="btn btn-warning">delete</button></span>
+             <hr>
+         </div>
+      </div>
+      <br>
+    </mat-tab>
+    <mat-tab label="User mesages">
+      <br>
+      <br>
+  <div class="container">
+  
+    <div  *ngFor="let m of Msg" class="card">
+      
+      <h4 class="username">username : {{m.Username}}</h4> 
+     <h4 class="email">email : {{m.email}}</h4>
+     <p class="message">message : {{m.contactmessage}}</p>
+     
+      <span><button mat-button  (click)="deleteMsg(m._id)" class="btn btn-warning">delete</button></span>
+      <hr>
+  </div>
+  </div>
+  <br>
+    </mat-tab>
+
+    <mat-tab label="Firebase post">
+      <br>
+      <br>
+          <table class="table table-sm " *ngFor="let f of Fpost">
+            {{Fpost.length}} posts on firebase
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">author</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{f.title}}</td>
+                <td>{{f.author}}</td>
+              </tr>
+            </tbody>
+          </table>
+           <!-- <button mat-button  (click)="delete(a.title)" class="btn btn-warning">delete</button> -->
+           <hr>
+  <br>
+    </mat-tab>
+    <mat-tab label="affilate links">
+         
+          
+      <div class="form-group card">
+        <label for="link">enter affilate link</label>
+        <input type="text" name="link" class="form-control"  [(ngModel)] = "link" id="exampleInputname2"  placeholder="Enter affilate link">
+      </div>  
+      <button (click)="affilate($event)" class="btn btn-primary submitbtn">Post Affilate link</button>
+    </mat-tab>
+
+    <mat-tab label="Community">
+      <br>
+      <br>
+  <div class="container">
+  <h1>Newsletter</h1>
+ <h3>{{Newsletter.length}} Community Members</h3>
+  <!-- put in the user traffic information eg clicks, session,  -->
+  <!-- <div  *ngFor="let n of Newsletter" class="card newsletter">
+    <h4>name : {{n.lettername}}</h4> 
+   <h5>email : {{n.letteremail}}</h5>
+</div> -->
+<table class="table table-sm ">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let n of Newsletter">
+    <tr>
+      <td>{{n.lettername}}</td>
+      <td>{{n.letteremail}}</td>
+    </tr>
+  </tbody>
+</table>
+   
+  </div>
+  <br>
+    </mat-tab>
+  </mat-tab-group>
+  
+</div>

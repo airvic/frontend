@@ -1,0 +1,43 @@
+.submitbtn{
+    margin:10px;
+    text-align: center;
+    padding: 12px;
+}
+.postheader{
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.toolbar {
+    align-items: center;
+    background-color: #7419db;
+    color: white;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+  }
+  .newsletter{
+    padding:10px;
+    margin:10px;
+  }
+  
+    
+  .spacer {
+    flex: 1 ;
+  }
+  .username{
+    font-style: bold;
+    margin:10px;
+  }
+  .email{
+    font-style: bold;
+    margin: 10px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  .message{
+    font-weight: 400;
+    margin:10px;
+    font-style: bold;
+  }
