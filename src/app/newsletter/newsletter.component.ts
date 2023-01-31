@@ -17,15 +17,21 @@ export class NewsletterComponent implements OnInit {
   }
 
   joinnewsletter(e:any){
-    this.validate.joinnewsletter(this.Name,this.Email).subscribe(feedback =>{
-      if(true){
-        window.alert('successfully joined brivima community newsletter')
-      }
-      else{
-        window.alert('error joining newsletter')
-      }
-    })
-
+    console.log(this.Name)
+    if(this.Name === undefined || this.Email === undefined){
+      window.alert('please input your name and email')
+    }else{
+      this.validate.joinnewsletter(this.Name,this.Email).subscribe(feedback =>{
+        if(true){
+          window.alert('successfully joined brivima community newsletter')
+        }
+        else{
+          window.alert('error joining newsletter')
+        }
+      })
+  
+    }
+ 
   }
 
 }

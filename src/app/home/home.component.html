@@ -2,7 +2,7 @@
 <mat-sidenav-container class="matcontainer">
     <mat-sidenav [(opened)]="opened">
         <mat-toolbar class="toolbar">
-          <img src="assets\93daefed47d549a2b2ee4c615eb53462.png" alt="" width="11%"> <h3 class="title">{{title}}</h3>
+        <h3 class="title">{{title}}</h3>
          
             <div class="spacer"></div>
             
@@ -63,7 +63,7 @@
     <mat-sidenav-content>
 
 
-        <mat-toolbar class="toolbar"> <img src="assets\93daefed47d549a2b2ee4c615eb53462.png" class="logo" > <h3 class="title">{{title}}</h3>
+        <mat-toolbar class="toolbar"> <h3 class="title">{{title}}</h3>
             <div class="spacer"></div>
             
             <!-- <div class="social">
@@ -82,10 +82,15 @@
           <mat-icon class="menu" (click)="sidenav($event)">menu</mat-icon>
         
           </mat-toolbar>
-<div class="container">
+          <div class="spinner" *ngIf="loaderService.isLoading |async">
+            <mat-spinner diameter="80" Mode="intermidiate"></mat-spinner>
+          </div>         
+
+  
+<div class="container main-section">
+  
   <!-- ads desplay here -->
-  <hr>
-      <div class="row">
+  <hr>    <div class="row">
        
         <div class="col22">
           <app-trending></app-trending>
@@ -99,6 +104,7 @@
         </div>
       </div>
 </div>
+
 
         
 

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import { LoaderService } from 'loader/loader.service';
+import { DatabaseComponent } from '../database/database.component';
 import { FetchService } from '../fetch.service';
+import { TrendingComponent } from '../trending/trending.component';
 
 
 @Component({
@@ -13,14 +16,18 @@ export class HomeComponent implements OnInit {
   title = "Brivima"
   opened = false;
   gottrending!: boolean;
-  
+ static sp:boolean;
+sp = true
+
+  content = false;
+
 
 
   sidenav(event:any){
      this.opened =  !this.opened
   }
   
-  constructor(private fetch:FetchService) {
+  constructor(private fetch:FetchService,public loaderService:LoaderService) {
     
   }
 
@@ -30,8 +37,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   
-
-  
   }
 
+
 }
+

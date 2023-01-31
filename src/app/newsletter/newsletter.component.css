@@ -1,6 +1,18 @@
-.btn{
+.b{
     text-align: center;
+  color: #262626;
+  padding: 20px;
 }
 .newsletter-block{
     text-align: center;
+}
+input{
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
 }

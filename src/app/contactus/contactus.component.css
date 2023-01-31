@@ -1,0 +1,28 @@
+.container{
+    margin-top: 50px;
+}
+.center{
+font-size:xx-large;
+font-weight: 500;
+font-style: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+    padding: 10px;
+    width: 30%;
+    margin-top: 10px;
+    align-items: center;
+
+}
+@media screen and (max-width:305px) {
+    button{
+        padding: 10px;
+        width: 50%;
+        margin-top: 10px;
+        align-items: center;
+    
+    }
+}
+textarea{
+    margin-bottom: 10px;
+}

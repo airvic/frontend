@@ -1,7 +1,7 @@
 
 <section>
   <!-- celebrity section -->
-<h2 class="header">for you</h2>
+
 <!-- <div class="grid">
      <div class="col" *ngFor="let c of celeb">
       <a [routerLink]="['explore/'+c.title+'/'+c._id]">
@@ -21,7 +21,9 @@
 
 </section>
 <section>
+  <h2 class="header" *ngIf="celeb">for you</h2>
   <div class="container card-group" >
+
     <div class="card" *ngFor="let c of celeb">
       <a [routerLink]="['explore/'+c.title+'/'+c._id]">
       <img src="{{c.image1}}" class="card-img-top" alt="...">

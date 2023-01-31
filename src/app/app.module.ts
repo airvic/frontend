@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDivider, MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
+import {MatProgressSpinner, MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSidenav, MatSidenavModule} from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
@@ -84,10 +85,11 @@ import { AffilateComponent } from './affilate/affilate.component';
     MatProgressBarModule,
     FormsModule,
     MatTabsModule,
-    RouterModule
+    RouterModule,
+    MatProgressSpinnerModule
   ],
-  // ,{provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi:true}
-  providers: [FetchService,ValidateService,AuthGuard,FirebasecrudService],
+
+  providers: [FetchService,ValidateService,AuthGuard,FirebasecrudService,{provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

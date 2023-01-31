@@ -18,6 +18,7 @@ export class TrendingComponent implements OnInit {
 
  
   d:any = []
+
   constructor(private fetch:FetchService,private router:Router,private validate:ValidateService) {
     
  
@@ -52,6 +53,7 @@ show = false
   mongo:any = [];
   Mongo:any = []
   Grid:any = []
+
   gottrending!: boolean;
   ngOnInit(): void {
     this.gettrendingfromserver();
@@ -79,6 +81,7 @@ show = false
     
   }
     this.gottrending =true;
+
    
 
     
@@ -103,6 +106,7 @@ console.log('slow network detected!');
 
 }else{
   // console.log(this.Result);
+ 
   
 }
   this.gottrending =true;

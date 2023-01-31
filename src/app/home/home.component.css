@@ -1,9 +1,10 @@
 .toolbar {
     align-items: center;
-    background-color: #7419db;
+    background-color: #262626;
+    position:relative;
     color: white;
     font-weight: 600;
-    padding: 0px;
+    padding: 12px;
     margin: 0px;
   }
   
@@ -17,7 +18,8 @@
       color: white;
   }
   .menu{
-    color: rgb(27, 26, 26);
+    color: #fff;
+    margin-right: 20px;
     font-size:x-large;
     cursor: pointer;
   }
@@ -91,7 +93,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: 100;
-    padding: 0px;
+    padding: 15px;
+    margin-top: 5px;
+  
   }
   
   mat-sidenav-content{
@@ -158,3 +162,17 @@
    
    
    }
+ 
+  .spinner {
+    position: fixed;
+    z-index: 1031;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+app-newsletter{
+  margin-top: 100px;
+}
+.ul a{
+  text-decoration: none;
+}

@@ -60,3 +60,11 @@
   ul.contact li{list-style:none;padding:15px 0;border-bottom:1px solid #f1f2f2;font-size:13px;font-weight:600;line-height:15px;}
   ul.contact li i{font-size:18px;margin-right:20px;color:#27aae1} 
   .copyright{background:#231f20;text-align:center;color:#fff;padding:12px 0 4px}
+
+
+  a{
+    text-decoration: none;
+  }
+  .footer2{
+    margin-top: 300px;
+  }
